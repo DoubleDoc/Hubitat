@@ -23,7 +23,7 @@
 import groovy.transform.Field
 
 metadata {
-    definition (name: "HomeSeer HS-FLS100+-G2 Floodlight Sensor", namespace: "DoubleDoc", author: "David Witt", importUrl: "https://raw.githubusercontent.com/DoubleDoc/hubitat-drivers/HS-FLS100+-G2 Floodlight.groovy") {
+    definition (name: "HomeSeer HS-FLS100+-G2 Floodlight Sensor", namespace: "DoubleDoc", author: "David Witt", importUrl: "https://raw.githubusercontent.com/DoubleDoc/hubitat-drivers/HS-FLS100+-G2 Floodlight/HS-FLS100+-G2.groovy") {
         capability "Switch"
         capability "Refresh"
         capability "Actuator"
