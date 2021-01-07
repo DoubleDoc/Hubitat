@@ -44,7 +44,7 @@ metadata {
 }
 @Field static Map configParams = [
         1: [input: [name: "configParam1", type: "number", title: "PIR Trigger Off period", description: "seconds 8-720", defaultValue: 15, range:"8..720"], parameterSize: 2],
-        2: [input: [name: "configParam2", type: "number", title: "Lux Threshold Settings", description: "lux 10-900", defaultValue: 50, range:"0..900"], parameterSize: 2],
+        2: [input: [name: "configParam2", type: "number", title: "Lux Threshold Settings", description: "lux 10-900", defaultValue: 50, range:"10..900"], parameterSize: 2],
         3: [input: [name: "configParam3", type: "number", title: "Lux and Temp reporting time", description: "minutes 0 to 1440 minutes", defaultValue: 10, range:"0..1440"], parameterSize: 2],
         4: [input: [name: "configParam4", type: "enum",   title: "PIR Trigger Alert", description: "", defaultValue: 1, options:[0:"Disable sending",1:"Enable sending"]], parameterSize: 1],
         5: [input: [name: "configParam5", type: "enum",   title: "Floodlight control mode", description: "", defaultValue: 1, options:[0:"Z-wave only",1:"Local and Z-wave"]], parameterSize: 1],
