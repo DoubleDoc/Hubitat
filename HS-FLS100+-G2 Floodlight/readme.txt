@@ -5,8 +5,10 @@ The user manual explains these features, and is posted with the driver.
 
 Following are notes from testing.
 
-Testing of all 3 units suggest internal heating is likely affecting the temperature sensor. At power on, each indicated reasonable measurements (withing 1 deg. F).
+Testing of all 3 units suggest internal heating is likely affecting the temperature sensor. At power on, each indicated reasonable measurements (withing 1 Deg.F).
 Temperature reports increased gradually without the lights powered. Finally reaching about +5 degF above ambient of 68.5.
+The device includes a parameter for calibration offsets of temperature. Testing indicated this parameter corresponds to Deg.F. as the temperature status also reports.
+The manual states the temperature calibration is Deg.C.
 
 Noted a large Lux report offset for one unit. In a low-light environment two indicated 50-80 Lux readings. One reported 9 and 10 Lux.
 This affects local light activations for both motion and the dusk-dawn operation. 
