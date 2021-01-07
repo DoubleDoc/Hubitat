@@ -15,7 +15,6 @@ Light Level Sensor
 In a low-light (subdued office) enclosed environment: two of three indicated 50-80 Lux readings. There was a large Lux report offset for one unit-9 and 10 Lux.
 This affects local light activations for both motion and the dusk-dawn operation. 
 The manual indicates a minimum setting of the control parameter threshold at 10 Lux for determinging dusk status.
-So, one of the units may operate in some daytime environments such as complete cloud cover.
 In a heavy cloud covered afternoon: 900 Lux reported. This is the maximum report per the manual.
 So, the light sensor appears biased toward low-light situations typical of evenings/mornings and saturates at fair levels.
 
