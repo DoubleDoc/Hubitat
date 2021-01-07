@@ -1,5 +1,6 @@
 /*
 *	HomeSeer HS-FLS100+-G2 Floodlight Sensor
+*   Driver for Hubitat
 *
 *   Original work of Bryan Copeland (Github djdizzyd) extended by David Witt for new -G2 device 2021/01/06
 *	version: 1.5 added support for new -G2 controls and changes, including temperature sensor reporting
@@ -48,7 +49,7 @@ metadata {
         4: [input: [name: "configParam4", type: "enum",   title: "PIR Trigger Alert", description: "", defaultValue: 1, options:[0:"Disable sending",1:"Enable sending"]], parameterSize: 1],
         5: [input: [name: "configParam5", type: "enum",   title: "Floodlight control mode", description: "", defaultValue: 1, options:[0:"Z-wave only",1:"Local and Z-wave"]], parameterSize: 1],
         6: [input: [name: "configParam6", type: "enum",   title: "Lux Sensor Mode for Light", description: "", defaultValue: 0, options:[0:"Night and motion",1:"All night"]], parameterSize: 1],    
-        7: [input: [name: "configParam7", type: "decimal", title: "Temperature Calbration Offset", description: "-10.0 to +10.0 DegF", range:"-10..10"], parameterSize: 1, parameterPrecision: 1, parameterSigned: 1],
+        7: [input: [name: "configParam7", type: "decimal", title: "Temperature Calbration Offset", description: "-10.0 to +10.0 DegF", defaultValue: 0.0, range:"-10..10"], parameterSize: 1, parameterPrecision: 1, parameterSigned: 1],
         8: [input: [name: "configParam8", type: "enum",   title: "PIR Sensitivity", description: "", defaultValue: 2, options:[0:"Low",1:"Mid",2:"High"]], parameterSize: 1]
 ]
 @Field static Map ZWAVE_NOTIFICATION_TYPES=[0:"Reserverd", 1:"Smoke", 2:"CO", 3:"CO2", 4:"Heat", 5:"Water", 6:"Access Control", 7:"Home Security", 8:"Power Management", 9:"System", 10:"Emergency", 11:"Clock", 12:"First"]
@@ -126,8 +127,7 @@ void zwaveEvent(hubitat.zwave.commands.configurationv1.ConfigurationReport cmd) 
         cmd.configurationValue.reverse().eachWithIndex { v, index -> scaledValue=scaledValue | v << (8*index) }
         // negative config paramaters support
         if (configParam.parameterSigned==1)
-        {   // adjust for 2s-complement negative values
-            log.info "sign work, ${configParam.parameterSize}, ${1<<7}"
+        {   // adjust for 2s-complement negative value
             if (configParam.parameterSize==1)
             {    // 8 bit byte values                
                 if (scaledValue >= (1<<7))
