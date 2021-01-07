@@ -1,4 +1,4 @@
-Tested 3 HomeSeer HS-FLS100+-G2 Floodling Sensors as part of adapting this driver.
+Tested 3 HomeSeer HS-FLS100+-G2 Floodlight Sensors as part of adapting this driver.
 
 New to the Gen 2 (-G2) are sensitity control for the motion sensor, a temperature sensor, and significant changes to the control paramters.
 The user manual explains these features, and is posted with the driver.
