@@ -12,6 +12,6 @@ The manual states the temperature calibration is Deg.C.
 
 Noted a large Lux report offset for one unit. In a low-light environment two indicated 50-80 Lux readings. One reported 9 and 10 Lux.
 This affects local light activations for both motion and the dusk-dawn operation. 
-The manual indicates a minimum setting of the threshold of 10 Lux for determinging dusk status.
+The manual indicates a minimum setting of the control parameter threshold at 10 Lux for determinging dusk status.
 So, one of the units may operate in some daytime environments such as complete cloud cover.
 
