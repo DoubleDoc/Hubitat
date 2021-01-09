@@ -18,3 +18,12 @@ The manual indicates a minimum setting of the control parameter threshold at 10 
 In a heavy cloud covered afternoon: 900 Lux reported. This is the maximum report per the manual.
 So, the light sensor appears biased toward low-light situations typical of evenings/mornings and saturates at fair levels.
 
+Motion Sensor
+Testing using the 'Low'(6 meter) sensitivity:
+Vehicle and people sensing at 3 times that distance. This unit is mounted high-about 12 ft up over vegetation. At this height, few to no unexplained motion events. This testing at 30-40 Deg.F. and no wind.
+A few unexplained motion events on a sensor mounted at 7 ft up and over a concrete drive then vegetation. This testing at 30-40 Deg.F. and no wind.
+Testing using the 'High' (10 meter) sensitivity:
+-in process
+
+
+
