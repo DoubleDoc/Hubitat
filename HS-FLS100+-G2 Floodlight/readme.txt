@@ -20,9 +20,9 @@ So, the light sensor appears biased toward low-light situations typical of eveni
 
 Motion Sensor
 Testing using the 'Low'(6 meter) sensitivity:
-Vehicle and people sensing at 3 times that distance. This unit is mounted high-about 12 ft up over vegetation. At this height, few to no unexplained motion events. This testing at 30-40 Deg.F. and no wind.
-A few unexplained motion events on a sensor mounted at 7 ft up and over a concrete drive then vegetation. This testing at 30-40 Deg.F. and no wind.
-Testing using the 'High' (10 meter) sensitivity:
+Vehicle and people sensing at 2 times that distance. This unit is mounted high-about 12 ft up over vegetation. At this height, few to no unexplained motion events. This testing at night, 30-40 Deg.F. and no wind.
+A few unexplained motion events on a sensor mounted at 7 ft up and over a concrete drive then vegetation. This testing at night, 30-40 Deg.F. and no wind.
+Testing using the 'High' (20 meter) sensitivity with the same two sensors and setup:
 -in process
 
 
