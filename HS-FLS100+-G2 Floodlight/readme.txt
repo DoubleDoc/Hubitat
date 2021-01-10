@@ -13,18 +13,20 @@ The device includes a parameter for calibration offsets of temperature. Testing 
 But, the manual incorrectly states the temperature calibration is Deg.C.
 
 Light Level Sensor
-In a low-light (subdued office) enclosed environment: two of three indicated 50-80 Lux readings. There was a large Lux report offset for one unit-9 and 10 Lux.
+In a low-light (subdued office) enclosed environment: two of three indicated 50-80 lux readings. There was a large lux report offset for one unit-9 and 10 lux.
 This affects local light activations for both motion and the dusk-dawn operation. 
-The manual indicates a minimum setting of the control parameter threshold at 10 Lux for determinging dusk status.
-In a heavy cloud covered afternoon: 900 Lux reported. This is the maximum report per the manual.
+The manual indicates a minimum setting of the control parameter threshold at 10 lux for determinging dusk status.
+In a heavy cloud covered afternoon: 900 lux reported. This is the maximum report per the manual. Night readings in dark are zero lux.
 So, the light sensor appears biased toward low-light situations typical of evenings/mornings and saturates at fair levels.
 
 Motion Sensor
 Testing using the 'Low'(6 meter) sensitivity:
-Vehicle and people sensing at 2 times that distance. This unit is mounted high-about 12 ft up over vegetation. At this height, few to no unexplained motion events. This testing at night, 30-40 Deg.F. and no wind.
-A few unexplained motion events on a sensor mounted at 7 ft up and over a concrete drive then vegetation. This testing at night, 30-40 Deg.F. and no wind.
-Testing using the 'High' (20 meter) sensitivity with the same two sensors and setup:
--in process
-
+Mounted high-about 12 ft up over vegetation. Vehicle and people sensing at 2 times that distance. Few false motion events. Testing at night, 30-40 Deg.F. and no wind.
+Mounted at 8 ft up and over a concrete drive then (12 ft) tall vegetation. A few unexplained motion events. Testing at night, 30-40 Deg.F. and no wind.
+Mounted at 7 ft up over bed 3ft bed with adjacent (2 ft range) tall and narrow conifer in side view, 10 ft concrete drive, then lawn and taller vegetation. Many false alerts. Testing at night, 30-40 Deg.F. and almost no wind.
+Testing using the 'High' (20 meter) sensitivity with the same sensors and setups:
+Mounted high-about 12 ft up over vegetation. Reliable vehicle sensing at distance, and no false reports.  Testing at night into morning, 25-40 Deg.F. and no wind.
+Mounted at 8 ft up and over a concrete drive then (12 ft) tall vegetation. Detected squirrel crossing drive. Single false event. Testing at night into morning, 25-40 Deg.F. and no wind.
+--pending
 
 
