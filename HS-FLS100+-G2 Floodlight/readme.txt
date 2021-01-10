@@ -8,6 +8,7 @@ Following are notes from testing.
 Temperature Sensor
 Testing of all 3 units suggest internal heating is likely affecting the temperature sensor. At power on, each indicated reasonable measurements (withing 1 Deg.F).
 Temperature reports increased gradually without the lights powered. Finally reaching about +5 degF above ambient of 68.5.
+Temperature reported is strongly affected by sunlight exposure. Morning sunlight increased the reported temperature 5 degF above ambient.
 The device includes a parameter for calibration offsets of temperature. Testing indicated this parameter corresponds to Deg.F., same as the temperature sensor reports.
 But, the manual incorrectly states the temperature calibration is Deg.C.
 
